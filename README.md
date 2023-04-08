@@ -12,7 +12,7 @@ A simple project for uploading and downloading files to a VPS with download time
 
 ### Quick start
 
-1. Go to the directory 'infra' and run in command line:</br>
+1. Run in command line:</br>
 ```docker-compose up -d```
 
 ### Authors

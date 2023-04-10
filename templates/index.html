@@ -39,7 +39,7 @@
                             </div>
                             {% if filename %}
                             <div class="alert alert-success" role="alert">
-                                File successfully uploaded.<br>
+                                The file was successfully uploaded on {{ upload_date }}<br>
                                 Upload time: {{ upload_time }}<br>
                                 You can download it from the following link:
                                 <a href="{{ url_for('download', filename=filename) }}">{{ filename }}</a>

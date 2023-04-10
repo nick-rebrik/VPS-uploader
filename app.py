@@ -27,10 +27,12 @@ def index():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             upload_time = naturaldelta(datetime.now() - g.start_time)
+            upload_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             return render_template(
                 'index.html',
                 filename=filename,
-                upload_time=upload_time
+                upload_time=upload_time,
+                upload_date=upload_date
             )
     return render_template('index.html')
 
